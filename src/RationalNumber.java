@@ -30,7 +30,8 @@ public class RationalNumber {
   }
   
   public String toString() {
-    return rnarray[0] + "/" + rnarray[1];
+    GreatestCommonDivisor(first, second);
+    return (rnarray[0] / first) + "/" + (rnarray[1] / first);
   }
   
   public void add(RationalNumber frac) {
